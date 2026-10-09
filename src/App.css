@@ -759,12 +759,16 @@
 @media (max-width: 768px) {
   .topbar .container { flex-direction: column; gap: 0.5rem; text-align: center; }
   .nav-links { display: none; }
-  .hero-bg-accent { width: 100%; clip-path: none; opacity: 0.8; }
-  .hero-image { right: -20%; opacity: 0.3; }
-  .hero-title { font-size: 2.5rem; }
-  .hero-features { flex-direction: column; }
-  .hero-right-text { position: relative; right: auto; top: auto; text-align: left; margin-top: 2rem; }
-  .hero-right-text-white, .hero-right-text-red { font-size: 2rem; }
+  .hero { min-height: auto; padding: 4rem 0 6rem; text-align: center; }
+  .hero-content { margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
+  .hero-bg-accent { display: none; }
+  .hero-image { right: 0; width: 100%; object-position: center top; opacity: 0.25; mask-image: linear-gradient(to top, transparent, black 40%); -webkit-mask-image: linear-gradient(to top, transparent, black 40%); }
+  .hero-title { font-size: 3rem; text-align: center; }
+  .hero-subtitle { text-align: center; margin: 1.5rem auto 2.5rem; }
+  .hero-actions { flex-direction: column; width: 100%; gap: 1rem; }
+  .hero-right-text { display: none; }
+  .hero-features { flex-direction: column; align-items: center; gap: 1.5rem; margin-top: 3rem; }
+  .hero-feature-item { flex-direction: column; text-align: center; gap: 0.5rem; }
   .category-grid { grid-template-columns: repeat(2, 1fr); }
   .products-grid { grid-template-columns: repeat(2, 1fr); }
   .features-grid { grid-template-columns: repeat(2, 1fr); }
@@ -781,12 +785,10 @@
 }
 
 @media (max-width: 480px) {
-  .hero-title { font-size: 2rem; }
-  .hero-right-text-white, .hero-right-text-red { font-size: 1.5rem; }
+  .hero-title { font-size: 2.5rem; }
   .category-grid { grid-template-columns: 1fr; }
   .products-grid { grid-template-columns: 1fr; }
   .features-grid { grid-template-columns: 1fr; }
-  .hero-actions { flex-direction: column; width: 100%; }
   .btn-primary, .btn-outline { width: 100%; }
   .promo-right h2 { font-size: 2rem; }
   .promo-center { height: 250px; }

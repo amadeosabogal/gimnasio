@@ -243,7 +243,7 @@ function App() {
               <button className="btn-primary">COMPRAR LA COLECCIÓN</button>
             </div>
             <div className="promo-center">
-              <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&auto=format&fit=crop" alt="Modelos" style={{ maskImage: 'linear-gradient(to top, transparent, black 10%)', WebkitMaskImage: 'linear-gradient(to top, transparent, black 10%)' }} />
+              <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&auto=format&fit=crop" alt="Modelos" style={{ maskImage: 'linear-gradient(to right, transparent, black 15%, black 85%, transparent), linear-gradient(to top, transparent, black 10%, black 100%)', WebkitMaskImage: 'linear-gradient(to right, transparent, black 15%, black 85%, transparent), linear-gradient(to top, transparent, black 10%, black 100%)', WebkitMaskComposite: 'source-in', maskComposite: 'intersect' }} />
             </div>
             <div className="promo-right">
               <h2>NUEVO<br/>LANZAMIENTO</h2>

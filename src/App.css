@@ -408,7 +408,8 @@
 .promo-left {
   flex: 1;
   padding: 4rem 0;
-  z-index: 2;
+  z-index: 10;
+  position: relative;
 }
 
 .promo-left h2 {
@@ -430,7 +431,7 @@
   justify-content: center;
   position: relative;
   height: 400px;
-  z-index: 2;
+  z-index: 1;
 }
 
 .promo-center img {
@@ -438,13 +439,15 @@
   position: absolute;
   bottom: -20px;
   object-fit: contain;
+  pointer-events: none;
 }
 
 .promo-right {
   flex: 1;
   text-align: right;
   padding: 4rem 0;
-  z-index: 2;
+  z-index: 10;
+  position: relative;
 }
 
 .promo-right h2 {

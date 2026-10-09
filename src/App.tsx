@@ -125,11 +125,11 @@ function App() {
           </div>
         </div>
 
-        <div className="hero-right-text" style={{ position: 'absolute', right: '8%', top: '25%', zIndex: 4, textAlign: 'right' }}>
-          <h2 style={{ fontSize: '3rem', fontStyle: 'italic', lineHeight: 1, marginBottom: '0.5rem' }}>
+        <div className="hero-right-text">
+          <h2 className="hero-right-text-white">
             EQUÍPATE.<br/>PRESÉNTATE.
           </h2>
-          <h2 style={{ fontSize: '3rem', fontStyle: 'italic', color: '#cc0000', lineHeight: 1 }}>
+          <h2 className="hero-right-text-red">
             NUNCA<br/>TE RINDAS.
           </h2>
         </div>

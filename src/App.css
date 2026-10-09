@@ -160,6 +160,28 @@
   line-height: 1.4;
 }
 
+.hero-right-text {
+  position: absolute;
+  right: 8%;
+  top: 25%;
+  z-index: 4;
+  text-align: right;
+}
+
+.hero-right-text-white {
+  font-size: 3rem;
+  font-style: italic;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.hero-right-text-red {
+  font-size: 3rem;
+  font-style: italic;
+  color: #cc0000;
+  line-height: 1;
+}
+
 .hero-features {
   margin-top: 4rem;
   display: flex;
@@ -741,8 +763,8 @@
   .hero-image { right: -20%; opacity: 0.3; }
   .hero-title { font-size: 2.5rem; }
   .hero-features { flex-direction: column; }
-  .hero-right-text { position: relative !important; right: 0 !important; top: 0 !important; text-align: left !important; margin-top: 2rem; }
-  .hero-right-text h2 { font-size: 2rem !important; }
+  .hero-right-text { position: relative; right: auto; top: auto; text-align: left; margin-top: 2rem; }
+  .hero-right-text-white, .hero-right-text-red { font-size: 2rem; }
   .category-grid { grid-template-columns: repeat(2, 1fr); }
   .products-grid { grid-template-columns: repeat(2, 1fr); }
   .features-grid { grid-template-columns: repeat(2, 1fr); }
@@ -752,14 +774,21 @@
   .newsletter-form { width: 100%; flex-direction: column; gap: 1rem; }
   .newsletter-form input, .newsletter-form button { width: 100%; padding: 1rem; }
   .section-title { font-size: 2rem; }
+  .promo-left, .promo-right { padding: 2rem 0; }
+  .promo-center { height: 300px; }
   .promo-left h2 { font-size: 2rem; }
   .promo-right h2 { font-size: 3rem; }
 }
 
 @media (max-width: 480px) {
+  .hero-title { font-size: 2rem; }
+  .hero-right-text-white, .hero-right-text-red { font-size: 1.5rem; }
   .category-grid { grid-template-columns: 1fr; }
   .products-grid { grid-template-columns: 1fr; }
   .features-grid { grid-template-columns: 1fr; }
   .hero-actions { flex-direction: column; width: 100%; }
   .btn-primary, .btn-outline { width: 100%; }
+  .promo-right h2 { font-size: 2rem; }
+  .promo-center { height: 250px; }
+  .section-padding { padding-top: 3rem; padding-bottom: 3rem; }
 }

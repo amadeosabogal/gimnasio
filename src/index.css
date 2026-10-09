@@ -76,6 +76,18 @@ h6 {
   padding: 0 4rem;
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
 .flex {
   display: flex;
 }
